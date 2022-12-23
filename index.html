@@ -17,12 +17,13 @@
     <header>library</header>
     <main>
         <div class="flex-container">
-            <button type="button" id="addBookBtn" class="btn btn-primary addBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" id="addBookBtn" class="btn btn-primary addBtn" data-bs-toggle="modal"
+                data-bs-target="#formModal">
                 + Add book
             </button>
         </div>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -33,7 +34,7 @@
                         <form id="bookForm">
                             <input type="text" name="title" id="title" placeholder="Title">
                             <input type="text" name="author" id="author" placeholder="Author">
-                            <input type="number" min="1" max="10000" placeholder="# of pages">
+                            <input type="number" min="1" id="pages" max="10000" placeholder="# of pages">
                             <div>
                                 <label for="readStatus"> Have you read it?</label>
                                 <input class="checkbox" type="checkbox" id="readStatus" name="readStatus" value="Yes">

@@ -17,7 +17,7 @@
     <header>library</header>
     <main>
         <div class="flex-container">
-            <button type="button" class="btn btn-primary addBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" id="addBookBtn" class="btn btn-primary addBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 + Add book
             </button>
         </div>
@@ -30,7 +30,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="GET">
+                        <form id="bookForm">
                             <input type="text" name="title" id="title" placeholder="Title">
                             <input type="text" name="author" id="author" placeholder="Author">
                             <input type="number" min="1" max="10000" placeholder="# of pages">
@@ -41,21 +41,12 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button type="button" id="submitBtn" form="bookForm" class="btn btn-primary">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="book-grid">
-            <div class="book">
-                <div class="title">Title: <span class="userTitle">"The lorder of the rings
-                        shadow of mordor"</span></div>
-                <div class="author">Author: <span class="userAuthor">Tolkein</span></div>
-                <div class="pages">Pages: <span class="userPages">300</span></div>
-                <button class="readBtn userReadStatus">Not Read</button>
-                <button class="removeBtn">Remove</button>
-            </div>
-            <div class="book">testing </div>
 
         </div>
     </main>
